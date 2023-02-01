@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BACK END.iml" filepath="$PROJECT_DIR$/BACK END.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data Types/Data Types.iml" filepath="$PROJECT_DIR$/Data Types/Data Types.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Input/Input.iml" filepath="$PROJECT_DIR$/Input/Input.iml" />
     </modules>
   </component>
 </project>
