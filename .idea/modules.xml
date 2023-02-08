@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BACK END.iml" filepath="$PROJECT_DIR$/BACK END.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Assign_Inst/Control_If/Control_If.iml" filepath="$PROJECT_DIR$/Assign_Inst/Control_If/Control_If.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data Types/Data Types.iml" filepath="$PROJECT_DIR$/Data Types/Data Types.iml" />
       <module fileurl="file://$PROJECT_DIR$/Input/Input.iml" filepath="$PROJECT_DIR$/Input/Input.iml" />
     </modules>
