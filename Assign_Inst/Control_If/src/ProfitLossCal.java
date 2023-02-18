@@ -1,6 +1,5 @@
-import java.util.Scanner;
-
 //15.Write a Java program to calculate profit and loss on a transaction.
+import java.util.Scanner;
 public class ProfitLossCal {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -10,7 +9,7 @@ public class ProfitLossCal {
         System.out.print("Enter your SP : ");
         sp = input.nextDouble();
         if (sp>cp){
-            System.out.println("Profit : "+(sp-cp)+"");
+            System.out.println("Profit : "+(sp-cp));
 
         }else {
             System.out.println("Loss : "+(cp-sp));
