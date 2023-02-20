@@ -1,0 +1,37 @@
+Write a program in Java to display the first 10 natural numbers.
+
+Write a Java program to find the sum of first 10 natural numbers.
+
+Write a program in Java to display n terms of natural number and their sum.
+
+Write a program in Java to read 10 numbers from keyboard and find their sum and average. // array 
+
+Write a program in Java to display the cube of the number upto given an integer.
+
+Write a program in Java to display the multiplication table of a given integer.
+
+Write a program in Java to display the n terms of odd natural number and their sum .
+
+Write a Java program to calculate the factorial of a given number.
+
+Write a program in Java to display the n terms of even natural number and their sum.
+
+Write a program in Java to display the n terms of square natural number and their sum.
+
+Write a Java program to check whether a given number is a perfect number or not.
+
+Write a Java program to find the perfect numbers within a given number of range.
+
+Write a Java program to check whether a given number is an armstrong number or not.
+
+Write a Java program to find the Armstrong number for a given range of number.
+
+Write a Java program to determine whether a given number is prime or not.
+
+Write a program in Java to find the prime numbers within a range of numbers.
+
+Write a program in Java to display the first n terms of Fibonacci series.
+
+Write a program in Java to display the number in reverse order.
+
+Write a program in Java to check whether a number is a palindrome or not.
