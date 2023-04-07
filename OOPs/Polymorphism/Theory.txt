@@ -1,0 +1,23 @@
+Polymorphism --> Poly(Many) + Morphism(Form)
+
+When an object perform different different task in different different circumstances than this concept is known as polymorphism.
+
+How to achieve polymorphism...
+Note --> Polymorphism is only achieved by methods
+Note --> Data members doesn't play any role in achieving polymorphism
+
+There are two types or way of polymorphism
+1. Compile time/ Early binding/ Method Overloading/ Static binding
+    --> when methods bounds with their functionalities at compile time.
+
+
+2. Runtime/ Late binding/ Method Overriding/ Dynamic binding
+    --> When methods bounds with their functionalities at runtime.
+
+
+==> Method Overloading
+    --> There is only one way to achieve method overloading by changing the parameters list of a method
+        -> but there are two ways to do so ...
+            1. Changing the number of parameters
+            2. Changing the data types of parameters
+                -> Vise Versa is not allowed can cause ambiguity error
