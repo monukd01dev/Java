@@ -21,3 +21,4 @@ There are two types or way of polymorphism
             1. Changing the number of parameters
             2. Changing the data types of parameters
                 -> Vise Versa is not allowed can cause ambiguity error
+                    Example :
