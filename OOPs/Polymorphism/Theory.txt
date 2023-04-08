@@ -41,6 +41,15 @@ when parent class data member and child class data member both are having exact 
     Example : https://github.com/monukd01dev/Java/blob/master/OOPs/Polymorphism/OverRiding/src/DataOverWrite.java
 
 
+Super Keyword
+What is super keyword in java?
+Super keyword in java is a reference variable with store the reference id of immediate parent class instance(object).
 
+Point to note : Whenever we create an instance of child class, an instance of parent class is created implicitly which is referenced by Super reference variable.
 
+Uses of Super Keyword :-
+1. super can be used to refer the data member of immediate parent class instance.
+2. super can be used to invoke methods of immediate parent class.
+3. super() can be used to invoke the constructor of immediate parent class.
 
+Note : super cannot be referenced through static context
