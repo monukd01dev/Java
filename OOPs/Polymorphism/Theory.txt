@@ -1,4 +1,4 @@
-Polymorphism --> Poly(Many) + Morphism(Form)
+Polymorphism --> Poly(Many) + Morphism(Form) --> one name many forms
 
 When an object perform different different task in different different circumstances than this concept is known as polymorphism.
 
@@ -21,4 +21,26 @@ There are two types or way of polymorphism
             1. Changing the number of parameters
             2. Changing the data types of parameters
                 -> Vise Versa is not allowed can cause ambiguity error
-                    Example :
+                    Example : https://github.com/monukd01dev/Java/blob/master/OOPs/Polymorphism/OverLoading/src/AmbiguityError.java
+
+==> Method Overriding (Is-A-Relationship)
+    --> Without Is-A-Relationship we cannot achieve Method Overriding child and parent classes is necessary to achieve runtime polymorphism.
+        -> When parent class and child class have exact same method (parameters are also same exact).
+            Example : https://github.com/monukd01dev/Java/blob/master/OOPs/Polymorphism/OverRiding/src/Child.java
+
+*==> OOPs When things have same Names
+1. Data Shadowing -> Instance variable and method Locals
+2. Method OverRiding -> Child and parent Methods
+3. Data OverWrite -> Child and Parent Data Members...
+
+Now main thing to notice here is Data OverWrite...
+
+What is Data OverWrite?
+when parent class data member and child class data member both are having exact same names then this concept is known as Data OverWrite.
+--> here also priority always goes to local...
+    Example : https://github.com/monukd01dev/Java/blob/master/OOPs/Polymorphism/OverRiding/src/DataOverWrite.java
+
+
+
+
+
