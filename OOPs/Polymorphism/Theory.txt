@@ -32,6 +32,7 @@ There are two types or way of polymorphism
 1. Data Shadowing -> Instance variable and method Locals
 2. Method OverRiding -> Child and parent Methods
 3. Data OverWrite -> Child and Parent Data Members...
+4. Method Hiding -> Child and Parent Static Method...
 
 Now main thing to notice here is Data OverWrite...
 
@@ -52,4 +53,24 @@ Uses of Super Keyword :-
 2. super can be used to invoke methods of immediate parent class.
 3. super() can be used to invoke the constructor of immediate parent class.
 
+Example : https://github.com/monukd01dev/Java/tree/034e1721d0b6aa69d6cb165e80d0384f1e941d9e/OOPs/Polymorphism/OverRiding/SuperKeyword
+
 Note : super cannot be referenced through static context
+
+==> Method Hiding
+What is method hiding?
+ When child and parent class both have exact same static method than this concept is known as Method Hiding.
+
+Note : Static methods inherits but cannot be override
+
+So in case of statics no override only method hiding
+
+Thing to remember to achieve method hiding
+--> Both methods must be exact same
+--> Overriding(Child method) and Overridden(Parent method) methods must be static, if one of them is static and other is non-static it will give error at compile time
+
+Why we can't override static method?
+ Cause static methods belongs to class and get their memory at compile time whereas overriding happens at runtime.
+
+Can we override main method?
+ No, because it's a static method.
