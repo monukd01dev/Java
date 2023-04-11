@@ -12,5 +12,6 @@ public class Child extends Parent {
     public static void main(String[] args) {
         // in case of inheritance always create the object of child because automatically all features of parent class came into the child class
         new Child().show(); // this will show the output of child class cause priority always goes to local
+        // but if there is no show() in child class so it will print the method of parent class cause it inherits parent
     }
 }

@@ -53,3 +53,59 @@ Uses of Super Keyword :-
 3. super() can be used to invoke the constructor of immediate parent class.
 
 Note : super cannot be referenced through static context
+
+=== Access Modifiers in Inheritance (Overriding)...
+What are Access Modifiers?
+    Access modifiers defines the accessibility...
+    Access modifiers in java 1. public
+                             2. protected (can be used by inheritance only, no aggregation)
+                             3. default (by default every thing in java is default)
+                             4. private (only accessed by its class member function only)
+
+In overriding relation of access modifiers from stronger to weaker
+Stronger ------>---------->------ weaker
+ public > protected > default > private
+
+ ------------------------------------------------------------
+ Parent Method              |         Child Method          |
+ ------------------------------------------------------------
+  public                    |   private/protected/default   |
+                            |   so in this case you will    |
+                            |   compile time error          |
+ ------------------------------------------------------------
+  private/protected/default |   public                      |
+                            |   compile successfully        |
+                            |                               |
+-------------------------------------------------------------
+
+Note : if override and overridden method have same access modifier then there will be no error
+
+but when your override method have private and overridden method have public access modifier you can't use super to  access the override method or this same case happens when we have both the methods private
+
+=== Covariant Return Type
+    Before Java's version 5 we can't override method by changing their return type.
+    --> but it has to follow some rules
+        -> 1. Return type of methods must be non-primitive
+        -> 2. Method has to return object of their own classes
+        -> 3. Both class have parent child relation
+
+
+==> Non Access modifiers in java
+    1. static
+    2. final
+    3. abstract
+    4. volatile
+    5. transient
+
+=== Final Keyword in Java
+    The final keyword in java is used to restrict the user. Teh java final keyword can be used in many context.
+    final can be:
+    - variable (constant)
+    - method (can't be overridden but inherited)
+    - class (can't be inherit)
+
+    --> if you will not initialize a final variable at the time of declaration it is known as blank final variable, and it can be only initialize by constructor.
+        -> JVM will not provide any default value to final variable, so we have to do it explicitly.
+
+    --> final static variable can be initialized by static block
+        -> JVM will not provide any default value to final static variable, so we have to do it explicitly.
