@@ -124,10 +124,48 @@ but when your override method have private and overridden method have public acc
     final can be:
     - variable (constant)
     - method (can't be overridden but inherited)
-    - class (can't be inherit)
+    - class (can't be inherited, but a final class can inherits )
 
     --> if you will not initialize a final variable at the time of declaration it is known as blank final variable, and it can be only initialize by constructor.
         -> JVM will not provide any default value to final variable, so we have to do it explicitly.
 
     --> final static variable can be initialized by static block
         -> JVM will not provide any default value to final static variable, so we have to do it explicitly.
+
+
+    -------------------------------------------------------------------------
+    ==> Runtime Polymorphism / Dynamic Method Dispatch
+        --> It is a process in which a call to an overridden method is resolved at runtime rather than compile time.
+        --> In this process, an overridden method is called through reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
+
+      === So, in short basically we are storing the reference id of subclass object in reference variable of superclass and this is known as upcasting.
+       -> In Case of upcasting existence of method is checked in parent but output will be print child class.
+           -> things to remember while implementing upcasting:
+                1. If overriding has done then parent method got check and output will be of child.
+                2. If no overriding has done and calling child class personal method then got compile time error.
+                3. If no overriding has done and calling parent class method then parent output came because of inheritance.
+
+      --> To achieve runtime polymorphism we need to do upcasting
+     == Recall for Inheritance -> Overriding -> RunTime Polymorphism -> Abstraction.
+
+       Note : When we do upcasting we can't call personal method of child class and if we want to do so we have to do down-casting
+
+        Down-Casting putting back the reference id of child class into child class reference variable for doing down-casting upcasting must be done first.
+          -> no new object is creating just typecasting of the parent reference variable is done.
+
+=== Static Binding and Dynamic Binding
+    --> What is Binding?
+        -> Connecting a method call to the method body is known as binding.
+    --> Type of Binding
+        1. Static Binding ( also known as Early Binding )
+            -> When type of object is determined at compile time(by compiler)
+            -> If there is any private, final or static method in a class, there is static binding
+        2. Dynamic Binding ( also known as Late Binding )
+            -> When type of object is determined at runtime
+
+=== Java Instanceof Operator :-
+    -> The java instance of operator is used to test whether the object is an instance of the specified type(class or subclass or interface).
+    -> The instanceof in java is also known as type comparison operator because it compares the instance with type. It returns either true or false. If we apply the instanceof with any variable that has null value, it returns false.
+
+
+
