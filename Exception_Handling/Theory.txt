@@ -13,7 +13,7 @@ RunTime Error > Logical Error > Syntax Error
 
 Now RunTime errors are most dangerous so these error must be handled. So to handle these errors we do Exception Handling.
 
-Note --> Now EveryThing in Java is in form of objects and so as exception.
+Note --> Now EveryThing in Java is in form of objects and so as exceptions.
 
 Now Why RunTime Exceptions or any other exceptions must be handled...
 If we recall about the features of Java, language claims that it is a Robust language (Java Program Never Fails at RunTime). And language accomplish their claim by using Exception Handling (Which handle's the exceptions occur at runtime and saves java program from termination).

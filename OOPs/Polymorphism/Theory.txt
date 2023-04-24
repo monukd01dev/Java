@@ -1,4 +1,4 @@
-Polymorphism --> Poly(Many) + Morphism(Form) --> one name many forms
+Polymorphism --> Poly(Many) + Morphism(Form) --> one name many forms(in aspect of programming)
 
 When an object perform different different task in different different circumstances than this concept is known as polymorphism.
 
