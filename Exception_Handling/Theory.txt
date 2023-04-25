@@ -1,0 +1,51 @@
+Exception --> abnormal condition
+When your programme is in running state and an abnormal condition(Exception) occur that abnormal condition is known as Exception.
+
+Now, what is difference between error and exception handling?
+ Suppose a process is running and an exception occurs and that exception is handled by JVM is known as exception handling and if JVM fails to handle that exception and process terminates/stops/fail than it's an error.
+
+Types of Error in Java
+--> Syntax Error
+--> Logical Error
+--> Runtime Error (Most Dangerous)
+
+RunTime Error > Logical Error > Syntax Error
+
+Now RunTime errors are most dangerous so these error must be handled. So to handle these errors we do Exception Handling.
+
+Note --> Now EveryThing in Java is in form of objects and so as exceptions.
+
+Now Why RunTime Exceptions or any other exceptions must be handled...
+If we recall about the features of Java, language claims that it is a Robust language (Java Program Never Fails at RunTime). And language accomplish their claim by using Exception Handling (Which handle's the exceptions occur at runtime and saves java program from termination).
+
+In Java to handle every type of exception that occur we have some predefined exception classes.
+
+Now lets see Hierarchy of classes in java
+
+--> Object class is the top most class of every class in java. If a class doesn't have any parent class by default object class its parent class.
+
+--> Object class has a subclass Throwable class.
+    --> Throwable class is the root/top most class in Exception Handling.
+
+--> Throwable class further have two subclasses 1.Exception 2.Error
+    --> Error class have all the exception that cannot be handled and these exceptions are known as unhandled exceptions. Example => StackOverFlow, OutOfMemory, IO Error etc.
+    --> Exception class have a Subclass Runtime Exception and many others.
+
+Types of Exception in Java...
+
+1. Unchecked/Runtime Exception
+    -> Exceptions that are not checked at compile time and caught at runtime and give error at runtime.
+    -> Runtime Exception class and its subclasses and Error class and its subclasses are Unchecked Exception.
+
+2. Checked/Compile Time Exception
+    -> checked at compile time.
+    -> All other exceptions are checked exception.
+    -> Handler(Try,Catch...) are mandatory in this...
+    -> Without Handler code give error at run time.
+
+How to Handle Exception In Java...
+
+
+
+
+

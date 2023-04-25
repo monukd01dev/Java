@@ -1,0 +1,171 @@
+Polymorphism --> Poly(Many) + Morphism(Form) --> one name many forms(in aspect of programming)
+
+When an object perform different different task in different different circumstances than this concept is known as polymorphism.
+
+How to achieve polymorphism...
+Note --> Polymorphism is only achieved by methods
+Note --> Data members doesn't play any role in achieving polymorphism
+
+There are two types or way of polymorphism
+1. Compile time/ Early binding/ Method Overloading/ Static binding
+    --> when methods bounds with their functionalities at compile time.
+
+
+2. Runtime/ Late binding/ Method Overriding/ Dynamic binding
+    --> When methods bounds with their functionalities at runtime.
+
+
+==> Method Overloading
+    --> There is only one way to achieve method overloading by changing the parameters list of a method
+        -> but there are two ways to do so ...
+            1. Changing the number of parameters
+            2. Changing the data types of parameters
+                -> Vise Versa is not allowed can cause ambiguity error
+                    Example : https://github.com/monukd01dev/Java/blob/master/OOPs/Polymorphism/OverLoading/src/AmbiguityError.java
+
+==> Method Overriding (Is-A-Relationship)
+    --> Without Is-A-Relationship we cannot achieve Method Overriding child and parent classes is necessary to achieve runtime polymorphism.
+        -> When parent class and child class have exact same method (parameters are also same exact).
+            Example : https://github.com/monukd01dev/Java/blob/master/OOPs/Polymorphism/OverRiding/src/Child.java
+
+*==> OOPs When things have same Names
+1. Data Shadowing -> Instance variable and method Locals
+2. Method OverRiding -> Child and parent Methods
+3. Data OverWrite -> Child and Parent Data Members...
+4. Method Hiding -> Child and Parent Static Method...
+
+Now main thing to notice here is Data OverWrite...
+
+What is Data OverWrite?
+when parent class data member and child class data member both are having exact same names then this concept is known as Data OverWrite.
+--> here also priority always goes to local...
+    Example : https://github.com/monukd01dev/Java/blob/master/OOPs/Polymorphism/OverRiding/src/DataOverWrite.java
+
+
+Super Keyword
+What is super keyword in java?
+Super keyword in java is a reference variable with store the reference id of immediate parent class instance(object).
+
+Point to note : Whenever we create an instance of child class, an instance of parent class is created implicitly which is referenced by Super reference variable.
+
+Uses of Super Keyword :-
+1. super can be used to refer the data member of immediate parent class instance.
+2. super can be used to invoke methods of immediate parent class.
+3. super() can be used to invoke the constructor of immediate parent class.
+
+Example : https://github.com/monukd01dev/Java/tree/034e1721d0b6aa69d6cb165e80d0384f1e941d9e/OOPs/Polymorphism/OverRiding/SuperKeyword
+
+Note : super cannot be referenced through static context
+
+==> Method Hiding
+What is method hiding?
+ When child and parent class both have exact same static method than this concept is known as Method Hiding.
+
+Note : Static methods inherits but cannot be override
+
+So in case of statics no override only method hiding
+
+Thing to remember to achieve method hiding
+--> Both methods must be exact same
+--> Overriding(Child method) and Overridden(Parent method) methods must be static, if one of them is static and other is non-static it will give error at compile time
+
+Why we can't override static method?
+ Cause static methods belongs to class and get their memory at compile time whereas overriding happens at runtime.
+
+Can we override main method?
+ No, because it's a static method.
+
+
+=== Access Modifiers in Inheritance (Overriding)...
+What are Access Modifiers?
+    Access modifiers defines the accessibility...
+    Access modifiers in java 1. public
+                             2. protected (can be used by inheritance only, no aggregation)
+                             3. default (by default every thing in java is default)
+                             4. private (only accessed by its class member function only)
+
+In overriding relation of access modifiers from stronger to weaker
+Stronger ------>---------->------ weaker
+ public > protected > default > private
+
+ ------------------------------------------------------------
+ Parent Method              |         Child Method          |
+ ------------------------------------------------------------
+  public                    |   private/protected/default   |
+                            |   so in this case you will    |
+                            |   compile time error          |
+ ------------------------------------------------------------
+  private/protected/default |   public                      |
+                            |   compile successfully        |
+                            |                               |
+-------------------------------------------------------------
+
+Note : if override and overridden method have same access modifier then there will be no error
+
+but when your override method have private and overridden method have public access modifier you can't use super to  access the override method or this same case happens when we have both the methods private
+
+=== Covariant Return Type
+    Before Java's version 5 we can't override method by changing their return type.
+    --> but it has to follow some rules
+        -> 1. Return type of methods must be non-primitive
+        -> 2. Method has to return object of their own classes
+        -> 3. Both class have parent child relation
+
+
+==> Non Access modifiers in java
+    1. static
+    2. final
+    3. abstract
+    4. volatile
+    5. transient
+
+=== Final Keyword in Java
+    The final keyword in java is used to restrict the user. Teh java final keyword can be used in many context.
+    final can be:
+    - variable (constant)
+    - method (can't be overridden but inherited)
+    - class (can't be inherited, but a final class can inherits )
+
+    --> if you will not initialize a final variable at the time of declaration it is known as blank final variable, and it can be only initialize by constructor.
+        -> JVM will not provide any default value to final variable, so we have to do it explicitly.
+
+    --> final static variable can be initialized by static block
+        -> JVM will not provide any default value to final static variable, so we have to do it explicitly.
+
+
+    -------------------------------------------------------------------------
+    ==> Runtime Polymorphism / Dynamic Method Dispatch
+        --> It is a process in which a call to an overridden method is resolved at runtime rather than compile time.
+        --> In this process, an overridden method is called through reference variable of a superclass. The determination of the method to be called is based on the object being referred to by the reference variable.
+
+      === So, in short basically we are storing the reference id of subclass object in reference variable of superclass and this is known as upcasting.
+       -> In Case of upcasting existence of method is checked in parent but output will be print child class.
+           -> things to remember while implementing upcasting:
+                1. If overriding has done then parent method got check and output will be of child.
+                2. If no overriding has done and calling child class personal method then got compile time error.
+                3. If no overriding has done and calling parent class method then parent output came because of inheritance.
+
+      --> To achieve runtime polymorphism we need to do upcasting
+     == Recall for Inheritance -> Overriding -> RunTime Polymorphism -> Abstraction.
+
+       Note : When we do upcasting we can't call personal method of child class and if we want to do so we have to do down-casting
+
+        Down-Casting putting back the reference id of child class into child class reference variable for doing down-casting upcasting must be done first.
+          -> no new object is creating just typecasting of the parent reference variable is done.
+
+=== Static Binding and Dynamic Binding
+    --> What is Binding?
+        -> Connecting a method call to the method body is known as binding.
+    --> Type of Binding
+        1. Static Binding ( also known as Early Binding )
+            -> When type of object is determined at compile time(by compiler)
+            -> If there is any private, final or static method in a class, there is static binding
+        2. Dynamic Binding ( also known as Late Binding )
+            -> When type of object is determined at runtime
+
+=== Java Instanceof Operator :-
+    -> The java instance of operator is used to test whether the object is an instance of the specified type(class or subclass or interface).
+    -> The instanceof in java is also known as type comparison operator because it compares the instance with type. It returns either true or false. If we apply the instanceof with any variable that has null value, it returns false.
+
+
+

@@ -1,0 +1,75 @@
+1.Write a Java program to accept two integers and check whether they are equal or not.
+
+2.Write a Java program to check whether a given number is even or odd.
+
+3.Write a Java program to check whether a given number is positive or negative.
+
+4.Write a Java program to find whether a given year is a leap year or not.
+
+5.Write a Java program to read the age of a candidate and determine whether it is eligible for casting his/her own vote.
+
+6.Write a Java program to accept the height of a person in centimeter and categorize the person according to their height.
+
+7.Write a Java program to find the largest of three numbers.
+
+8.Write a Java program to find the eligibility of admission for a professional course based on the following criteria:
+
+Eligibility Criteria : Marks in Maths >=65 and Marks in Phy >=55 and Marks in Chem>=50 and Total in all three subject >=190 or Total in Maths and Physics >=140 ------------------------------------- Input the marks obtained in Physics :65 Input the marks obtained in Chemistry :51 Input the marks obtained in Mathematics :72 Total marks of Maths, Physics and Chemistry : 190 Total marks of Maths and Physics : 137 The candidate is not eligible.
+
+9.Write a Java program to read roll no, name and marks of three subjects and calculate the total, percentage and division.
+
+Input the Roll Number of the student :784
+Input the Name of the Student :James
+Input the marks of Physics, Chemistry and Computer Application : 70 80 90
+
+10.Write a Java program to read temperature in centigrade and display a suitable message according to temperature state below :
+
+Temp < 0 then Freezing weather
+Temp 0-10 then Very Cold weather
+Temp 10-20 then Cold weather
+Temp 20-30 then Normal in Temp
+Temp 30-40 then Its Hot
+Temp >=40 then Its Very Hot
+
+11.Write a Java program to check whether a triangle is Equilateral, Isosceles or Scalene.
+
+12.Write a Java program to check whether a triangle can be formed by the given value for the angles.
+
+13.Write a Java program to check whether a character is an alphabet, digit or special character.
+
+14.Write a Java program to check whether an alphabet is a vowel or consonant.
+
+15.Write a Java program to calculate profit and loss on a transaction.
+
+16.Write a program in Java to calculate and print the Electricity bill of a given customer. The customer id., name and unit consumed by the user should be taken from the keyboard and display the total amount to pay to the customer. The charge are as follow :
+
+Unit	                                                                                    Charge/unit
+upto 199	                                                                                        @1.20
+200 and above but less than 400	                                        @1.50
+400 and above but less than 600	                                        @1.80
+600 and above	                                                                        @2.00
+If bill exceeds Rs. 400 then a surcharge of 15% will be charged and the minimum bill should be of Rs. 100/-	
+
+
+17.Write a program in Java to accept a grade and declare the equivalent description :
+
+Grade	Description
+E	Excellent
+V	Very Good
+G	Good
+A	Average
+F	Fail
+
+18.Write a program in Java to read any day number in integer and display day name in the word.
+
+19.Write a program in Java to read any Month Number in integer and display Month name in the word.
+
+20.Write a program in Java to read any Month Number in integer and display the number of days for this month.
+
+21.Write a program in Java which is a Menu-Driven Program to compute the area of the various geometrical shape.
+
+22.Write a program in Java which is a Menu-Driven Program to perform a simple calculation.
+
+
+
+
