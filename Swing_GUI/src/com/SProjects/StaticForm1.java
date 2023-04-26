@@ -16,7 +16,7 @@ public class StaticForm1 extends JFrame {
             JTextField tf1 = new JTextField();
             JTextField tf2 = new JTextField();
             JButton jb = new JButton("Log In");
-
+            JOptionPane.showMessageDialog(this,"test message");
         //setting bounds
             // For heading
                 lb1.setBounds(120, 30, 200, 40);
@@ -29,7 +29,7 @@ public class StaticForm1 extends JFrame {
                 lb3.setBounds(63, 150, 150, 30); // 50 = 30 height + 20 margin top
                 lb3.setFont(new Font("Serif", Font.PLAIN, 25));
 
-            // input feilds
+            // input fields
                 tf1.setBounds(200,105,120,30);
                 tf2.setBounds(200,155,120,30);
 
