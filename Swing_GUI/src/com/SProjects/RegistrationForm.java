@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 
 public class RegistrationForm extends JFrame implements ActionListener {
 
-    //Desing
+    //Design
     private Font f = new Font(Font.SERIF,Font.PLAIN,20);
     private Border blackline = BorderFactory.createLineBorder(Color.black);
     private JLabel Fname,Lname,Email,Phone;
